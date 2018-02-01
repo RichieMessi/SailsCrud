@@ -11,6 +11,10 @@
  */
 
 module.exports = {
+  models: {
+    connection: 'ideastore'
+    // url: process.env.
+  }
 
   /***************************************************************************
    * Set the default database connection for models in the production        *
