@@ -1,0 +1,31 @@
+<div class="container">
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item nav-link" href="/">Home</a>
+                  <a class="dropdown-item" href="/ideas/<%= idea.id %>">JSON Data</a>
+
+                </div>
+              </div>
+<br><br><br><br>
+
+              <div class="card bg-dark text-white" style="width: 50rem;">
+                    <div class="card-body ">
+                      <h5 class="card-title">Edit Idea</h5>
+                      <form method="POST" action="/ideas/update/<%= idea.id %>">
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Title</label>
+                              <input name="title" type="text" class="form-control" value="<%= idea.title %>">
+                            </div>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput2">Body</label>
+                              <input name="body" type="text" class="form-control" value="<%= idea.body %>">
+                            </div>
+
+                            <input type="submit" value="Submit" type="text" class="btn btn-secondary">
+                          </form>
+                    </div>
+                  </div>
+</div>
