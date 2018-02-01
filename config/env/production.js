@@ -12,8 +12,8 @@
 
 module.exports = {
   models: {
-    connection: 'ideastore'
-    // url: process.env.
+    connection: 'ideastore',
+    url: 'mongodb://root:12345@ds221148.mlab.com:21148/ideastore'
   }
 
   /***************************************************************************
