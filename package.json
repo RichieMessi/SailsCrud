@@ -35,5 +35,8 @@
     "url": "git://github.com/anonymous node/sails user/myapp.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "engines": {
+    "node": "4.1.1"
+  }
 }
